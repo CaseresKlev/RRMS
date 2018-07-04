@@ -51,13 +51,13 @@ Partial Class Menu
         Me.Uname = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripStatusLabel2 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.StripDate = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.Timer_DateNow = New System.Windows.Forms.Timer(Me.components)
-        Me.Panel_WA = New System.Windows.Forms.Panel()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Timer_DateNow = New System.Windows.Forms.Timer(Me.components)
+        Me.Panel_WA = New System.Windows.Forms.Panel()
         Me.Panel_Top.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
@@ -65,9 +65,9 @@ Partial Class Menu
         Me.Panel4.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.StatusStrip_UserDate.SuspendLayout()
-        Me.Panel5.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.Panel7.SuspendLayout()
+        Me.Panel5.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel_Bottom
@@ -252,8 +252,8 @@ Partial Class Menu
         'StatusStrip_UserDate
         '
         Me.StatusStrip_UserDate.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.StatusStrip_UserDate.BackColor = System.Drawing.SystemColors.Control
         Me.StatusStrip_UserDate.Dock = System.Windows.Forms.DockStyle.None
         Me.StatusStrip_UserDate.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -293,40 +293,6 @@ Partial Class Menu
         Me.StripDate.Size = New System.Drawing.Size(96, 20)
         Me.StripDate.Text = "Date Now"
         '
-        'Timer_DateNow
-        '
-        '
-        'Panel_WA
-        '
-        Me.Panel_WA.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel_WA.Location = New System.Drawing.Point(0, 93)
-        Me.Panel_WA.Name = "Panel_WA"
-        Me.Panel_WA.Size = New System.Drawing.Size(850, 369)
-        Me.Panel_WA.TabIndex = 4
-        '
-        'Panel5
-        '
-        Me.Panel5.BackColor = System.Drawing.SystemColors.Control
-        Me.Panel5.Controls.Add(Me.Label1)
-        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel5.Location = New System.Drawing.Point(0, 0)
-        Me.Panel5.Margin = New System.Windows.Forms.Padding(0)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(82, 28)
-        Me.Panel5.TabIndex = 1
-        '
-        'Label1
-        '
-        Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(0, 0)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(82, 28)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Progress:"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
         'Panel6
         '
         Me.Panel6.Controls.Add(Me.Panel7)
@@ -359,6 +325,40 @@ Partial Class Menu
         Me.ProgressBar1.TabIndex = 0
         Me.ProgressBar1.Visible = False
         '
+        'Panel5
+        '
+        Me.Panel5.BackColor = System.Drawing.SystemColors.Control
+        Me.Panel5.Controls.Add(Me.Label1)
+        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel5.Location = New System.Drawing.Point(0, 0)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(0)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(82, 28)
+        Me.Panel5.TabIndex = 1
+        '
+        'Label1
+        '
+        Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(0, 0)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(82, 28)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Progress:"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Timer_DateNow
+        '
+        '
+        'Panel_WA
+        '
+        Me.Panel_WA.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel_WA.Location = New System.Drawing.Point(0, 93)
+        Me.Panel_WA.Name = "Panel_WA"
+        Me.Panel_WA.Size = New System.Drawing.Size(850, 369)
+        Me.Panel_WA.TabIndex = 4
+        '
         'Menu
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
@@ -386,9 +386,9 @@ Partial Class Menu
         Me.TableLayoutPanel1.PerformLayout()
         Me.StatusStrip_UserDate.ResumeLayout(False)
         Me.StatusStrip_UserDate.PerformLayout()
-        Me.Panel5.ResumeLayout(False)
         Me.Panel6.ResumeLayout(False)
         Me.Panel7.ResumeLayout(False)
+        Me.Panel5.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub

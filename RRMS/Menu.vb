@@ -1,8 +1,8 @@
 ﻿Public Class Menu
-    Private f2 As Form2
+    Private f2 As Book
     Private Sub Menu_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Timer_DateNow.Start()
-        f2 = New Form2
+        f2 = New Book
 
     End Sub
 

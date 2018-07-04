@@ -1,4 +1,4 @@
-﻿Public Class Form2
+﻿Public Class Book
     Private m As New Menu
     Private Sub Panel_WA_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel_WA.Paint
         'InitForm()
